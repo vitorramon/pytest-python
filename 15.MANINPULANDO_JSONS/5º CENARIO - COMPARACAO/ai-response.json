@@ -1,0 +1,14 @@
+{
+  "did_get_valid_completion": true,
+  "result": {
+    "capable": true,
+    "reason": "The service requirements specify a required depth of 12.5 mm and a required torque of 6 Nm, with specific screwing points including their coordinates and bit dimensions. My current capabilities include setting the screwing depth to 12.5 mm, applying a torque of 6 Nm, and configuring screwing points with coordinates and bit dimensions within the specified ranges. Therefore, I am capable of fulfilling this service request."
+  },
+  "completion_info": {
+    "total_tokens": 3292,
+    "completion_tokens": 94,
+    "prompt_tokens": 3198
+  },
+  "response_time": 6.522014744000444,
+  "observed_throughput": 504.75200213680716
+}

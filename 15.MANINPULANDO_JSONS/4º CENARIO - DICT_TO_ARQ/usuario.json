@@ -1,0 +1,9 @@
+{
+    "nome": "Carlos",
+    "ativo": true,
+    "cursos": [
+        "Python Básico",
+        "APIs com Flask"
+    ],
+    "id": null
+}

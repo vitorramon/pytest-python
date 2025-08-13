@@ -1,0 +1,204 @@
+{
+"kind": "Instance",
+"idShort": "Screwing",
+"id": "https://example.com/ids/sm/1035_2161_4052_4252",
+"modelType": "Submodel",
+"submodelElements": [
+{
+"idShort": "OperationalState",
+"description": "Indicates the current operational status of the screwing taks",
+"category": "VARIABLE",
+"modelType": "Property",
+"valueType": "xs:string",
+"value": "Idle"
+},
+{
+"idShort": "Bit",
+"description": "Collection designed to include bit data (length and diameter)",
+"category": "CONSTANT",
+"modelType": "SubmodelElementCollection",
+"value": [
+{
+"idShort": "Length",
+"description": "Length of the bit ",
+"category": "VARIABLE",
+"modelType": "Property",
+"valueType": "xs:float",
+"value": "22.56"
+},
+{
+"idShort": "Diameter",
+"description": "Diameter of the bit ",
+"category": "VARIABLE",
+"modelType": "Property",
+"valueType": "xs:float",
+"value": "7.24"
+}
+]
+},
+{
+"idShort": "Depth",
+"description": "SMC for containing all depth-related properties",
+"category": "CONSTANT",
+"modelType": "SubmodelElementCollection",
+"value": [
+{
+"idShort": "MinDepth",
+"description": "Minimum depth of the drilled or screwed hole, measured in millimeters.",
+"category": "CONSTANT",
+"modelType": "Property",
+"valueType": "xs:float",
+"value": "12.5"
+},
+{
+"idShort": "MaxDepth",
+"description": "Maximum depth of the drilled or screwed hole, measured in millimeters.",
+"category": "CONSTANT",
+"modelType": "Property",
+"valueType": "xs:float",
+"value": "25.0"
+}
+]
+},
+{
+"idShort": "Torque",
+"description": "SMC for containing all torque-related properties",
+"category": "CONSTANT",
+"modelType": "SubmodelElementCollection",
+"value": [
+{
+"idShort": "MinTorque",
+"description": "The minimum torque value applied during the tightening process, measured in Newton-meters.",
+"category": "PARAMETER",
+"modelType": "Property",
+"valueType": "xs:float",
+"value": "5.5"
+},
+{
+"idShort": "MaxTorque",
+"description": "The maximum torque value applied during the tightening process, measured in Newton-meters.",
+"category": "PARAMETER",
+"modelType": "Property",
+"valueType": "xs:float",
+"value": "12.0"
+}
+]
+},
+{
+"idShort": "Metrics",
+"description": "SMC for containing metrics (time related to cost).",
+"category": "CONSTANT",
+"modelType": "SubmodelElementCollection",
+"value": [
+{
+"idShort": "AverageTimePerScrew",
+"description": "Cost in terms of time (ms) for each screw to be placed.",
+"category": "VARIABLE",
+"modelType": "Property",
+"valueType": "xs:integer",
+"value": "2"
+}
+]
+},
+{
+"idShort": "SetupParameters",
+"modelType": "SubmodelElementCollection",
+"value": [
+{
+"idShort": "SetupScrewing",
+"description": "SMC designed for containing all screwing points for the setup",
+"modelType": "SubmodelElementCollection",
+"value": [
+{
+"idShort": "SetupCoordinates",
+"description": "Collection containing all the coordinates for the setup.",
+"modelType": "SubmodelElementCollection",
+"value": [
+{
+"idShort": "SetupCoordX",
+"description": "Coordinate of screw setup in the X axis",
+"category": "VARIABLE",
+"modelType": "Property",
+"valueType": "xs:float",
+"value": "120.0"
+},
+{
+"idShort": "SetupCoordY",
+"description": "Coordinate of screw setup in the Y axis",
+"category": "VARIABLE",
+"modelType": "Property",
+"valueType": "xs:float",
+"value": "80.0"
+},
+{
+"idShort": "SetupCoordZ",
+"description": "Coordinate of screw setup in the Z axis",
+"category": "VARIABLE",
+"modelType": "Property",
+"valueType": "xs:float",
+"value": "40.0"
+}
+]
+}
+]
+},
+{
+"idShort": "CoordinateLimits",
+"description": "This collection contains the limits that SetupCoordinates must follow.",
+"category": "CONSTANT",
+"modelType": "SubmodelElementCollection",
+"value": [
+{
+"idShort": "MaxLimitX",
+"description": "Maximum X coordinates limit measured in milimeters (mm)",
+"category": "VARIABLE",
+"modelType": "Property",
+"valueType": "xs:float",
+"value": "139.0"
+},
+{
+"idShort": "MinLimitX",
+"description": "Minimum X coordinates limit measured in milimeters (mm)",
+"category": "VARIABLE",
+"modelType": "Property",
+"valueType": "xs:float",
+"value": "0.0"
+},
+{
+"idShort": "MaxLimitY",
+"description": "Maximum Y coordinates limit measured in milimeters (mm)",
+"category": "VARIABLE",
+"modelType": "Property",
+"valueType": "xs:float",
+"value": "139.0"
+},
+{
+"idShort": "MinLimitY",
+"description": "Minimum Y coordinates limit measured in milimeters (mm)",
+"category": "VARIABLE",
+"modelType": "Property",
+"valueType": "xs:float",
+"value": "0.0"
+},
+{
+"idShort": "MaxLimitZ",
+"description": "Maximum Z coordinates limit measured in milimeters (mm)",
+"category": "VARIABLE",
+"modelType": "Property",
+"valueType": "xs:float",
+"value": "199.0"
+},
+{
+"idShort": "MinLimitZ",
+"description": "Minimum Z coordinates limit measured in milimeters (mm)",
+"category": "VARIABLE",
+"modelType": "Property",
+"valueType": "xs:float",
+"value": "0.0"
+}
+]
+}
+]
+}
+]
+}

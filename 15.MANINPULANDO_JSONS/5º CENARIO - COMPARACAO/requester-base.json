@@ -1,0 +1,106 @@
+{
+"kind": "Instance",
+"idShort": "Screwing",
+"description": "Submodel designed for encapsulating all screwing-related operations and metrics.",
+"category": "CONSTANT",
+"id": "https://example.com/ids/sm/6231_6142_6052_1047",
+"modelType": "Submodel",
+"submodelElements": [
+{
+"idShort": "Depth",
+"description": "SMC for containing all depth-related properties",
+"category": "CONSTANT",
+"modelType": "SubmodelElementCollection",
+"value": [
+{
+"idShort": "RequiredDepth",
+"description": "Refers to the length of the screw measured in milimeters (mm).",
+"category": "CONSTANT",
+"modelType": "Property",
+"valueType": "xs:float",
+"value": "12.5"
+}
+]
+},
+{
+"idShort": "Torque",
+"description": "SMC for containing all torque-related properties",
+"category": "CONSTANT",
+"modelType": "SubmodelElementCollection",
+"value": [
+{
+"idShort": "RequiredTorque",
+"description": "The required torque value applied during the tightening process, measured in Newton-meters.",
+"category": "PARAMETER",
+"modelType": "Property",
+"valueType": "xs:float",
+"value": "6"
+}
+]
+},
+{
+"idShort": "ScrewingPoints",
+"description": "SMC designed for containing all screwing points",
+"category": "CONSTANT",
+"modelType": "SubmodelElementCollection",
+"value": [
+{
+"idShort": "Point1",
+"description": "Collection containing the point's important features",
+"category": "CONSTANT",
+"modelType": "SubmodelElementCollection",
+"value": [
+{
+"idShort": "ScrewArea",
+"description": "Collection designed to specify the safe area of screwing using the bit's length and diameter",
+"category": "CONSTANT",
+"modelType": "SubmodelElementCollection",
+"value": [
+{
+"idShort": "Length",
+"description": "Length of the area of screwing ",
+"category": "VARIABLE",
+"modelType": "Property",
+"valueType": "xs:float",
+"value": "20"
+},
+{
+"idShort": "Diameter",
+"description": "Diameter of the area of screwing ",
+"category": "VARIABLE",
+"modelType": "Property",
+"valueType": "xs:float",
+"value": "7.24"
+}
+]
+},
+{
+"idShort": "ScrewingCoordX",
+"description": "Coordinate of screw in the X axis",
+"category": "PARAMETER",
+"modelType": "Property",
+"valueType": "xs:float",
+"value": "29"
+},
+{
+"idShort": "ScrewingCoordY",
+"description": "Coordinate of screw in the Y axis",
+"category": "PARAMETER",
+"modelType": "Property",
+"valueType": "xs:float",
+"value": "105"
+},
+{
+"idShort": "ScrewingCoordZ",
+"description": "Coordinate of screw in the Z axis",
+"category": "PARAMETER",
+"modelType": "Property",
+"valueType": "xs:float",
+"value": "22"
+}
+]
+}
+]
+}
+]
+}
